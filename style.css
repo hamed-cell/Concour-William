@@ -1,136 +1,129 @@
-
-.graphique {
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-  }
-  
-  .horizontal {
-    background-color: #3498db;
-    margin: 17px 0;
-    text-align: right;
-    position: relative;
-    height: 30px;
-    border-radius: 5px;
-  } 
-  .horizontal1 {
-    background-color: #92ce22;
-    margin: 17px 0;
-    text-align: right;
-    position: relative;
-    height: 30px;
-    border-radius: 5px;
-  } .horizontal2 {
-    background-color: #d7f05b;
-    margin: 17px 0;
-    text-align: right;
-    position: relative;
-    height: 30px;
-    border-radius: 5px;
-  } .horizontal3 {
-    background-color: #536a7a;
-    margin: 17px 0;
-    text-align: right;
-    position: relative;
-    height: 30px;
-    border-radius: 5px;
-  } 
-
-
-
-  .graphique {
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .vertical-bar {
-    background-color: #3438db;
-    width: 30px;
-    margin: 10px; 
-    display: inline-block;
-  }
-  
-  .vertical-bar1 {
-    background-color: #b5d6c7;
-    width: 30px;
-    margin: 10px; 
-    display: inline-block;
-  }
-  .vertical-bar2 {
-    background-color: #34383b;
-    width: 30px;
-    margin: 10px; 
-    display: inline-block;
-  }
-  .vertical-bar3 {
-    background-color: #38db;
-    width: 30px;
-    margin: 10px; 
-    display: inline-block;
-  }
-  .vertical {
-    display: flex;
-    align-items: flex-end; 
-    height: 200px;
-    padding: 10px;
-  }
-  
-  
-  
-  
-
-  
-  
-  
-
-
-#cambembert {
-    position: relative;
-    width: 120px;
-    height: 120px;
+:root {
+  --color-blue: #1303ff;
+  --color-light-green: #52f264;
+  --color-dark-green: #008000;
+  --color-yellow-green: #e1ff4c;
+  --color-dark-grey: #34383b;
+  --color-grey-blue: #345f7e;
+  --color-purple: #3438db;
+  --color-light-grey: #d7d7d7;
+  --color-red: #d00000;
 }
 
-div.cambembert {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 60px solid green;
-    border-radius: 60px;
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.cambembert.vert {
-    z-index: 1;
+body {
+  padding: 1rem;
 }
 
-.cambembert.rouge {
-    z-index: 2;
-    border: 60px solid red;
-    border-top: 60px solid transparent;
-    border-right: 60px solid transparent;
+h1,
+h2,
+h3 {
+  margin-top: 5rem;
 }
 
-.cambembert.bleu {
-    z-index: 2;
-    border: 60px solid blue;
-    border-top: 60px solid transparent;
-    border-right: 60px solid transparent;
-    transform: rotate(36deg);
+/* GRAPHIQUE À BARRES */
+
+div.graph {
+  width: 100%;
+  max-width: 600px;
 }
 
-.texte {
-    position: absolute;
-    z-index: 3;
-    color: white;
+/* Horizontal */
+
+.horizontal {
+  position: relative;
+  text-align: right;
+  height: 30px;
+  margin: 10px 0;
+  border-radius: 5px;
 }
 
-.texte.vert {
-    top: 30px;
-    left: 70px;
+.horizontal.barre-1 {
+  background-color: var(--color-blue);
+  width: 60%;
 }
 
-.texte.rouge {
-    top: 60px;
-    left: 20px;
+.horizontal.barre-2 {
+  background-color: var(--color-light-green);
+  width: 30%;
+}
+
+.horizontal.barre-3 {
+  background-color: var(--color-yellow-green);
+  width: 90%;
+}
+
+.horizontal.barre-4 {
+  background-color: var(--color-grey-blue);
+}
+
+/* Vertical */
+
+.container-vertical {
+  display: flex;
+  align-items: flex-end;
+  height: auto;
+}
+
+.vertical {
+  display: inline-block;
+  margin: 5px;
+  width: 30px;
+  border-radius: 5px;
+}
+
+.vertical.barre-1 {
+  background-color: var(--color-purple);
+  height: 60px;
+}
+
+.vertical.barre-2 {
+  background-color: var(--color-yellow-green);
+  height: 30px;
+}
+
+.vertical.barre-3 {
+  background-color: var(--color-dark-grey);
+  height: 90px;
+}
+
+.vertical.barre-4 {
+  background-color: var(--color-light-grey);
+  height: 70px;
+}
+
+/* GRAPHIQUE CIRCULAIRE */
+
+.container-circulaire {
+  width: 120px;
+  height: 120px;
+}
+
+div.circulaire {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circulaire.vert {
+  z-index: 1;
+  border: 60px solid var(--color-dark-green);
+}
+
+.circulaire.rouge {
+  z-index: 3;
+  border: 60px solid var(--color-red);
+  border-top: 60px solid transparent;
+  border-right: 60px solid transparent;
+}
+
+
+.circulaire.bleu {
+  z-index: 2;
+  border: 60px solid var(--color-blue);
+  border-top: 60px solid transparent;
+  border-right: 60px solid transparent;
+  transform: rotate(38deg);
 }
