@@ -1,4 +1,90 @@
-/* CAMEMBERT */
+
+.graphique {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+  }
+  
+  .horizontal {
+    background-color: #3498db;
+    margin: 17px 0;
+    text-align: right;
+    position: relative;
+    height: 30px;
+    border-radius: 5px;
+  } 
+  .horizontal1 {
+    background-color: #92ce22;
+    margin: 17px 0;
+    text-align: right;
+    position: relative;
+    height: 30px;
+    border-radius: 5px;
+  } .horizontal2 {
+    background-color: #d7f05b;
+    margin: 17px 0;
+    text-align: right;
+    position: relative;
+    height: 30px;
+    border-radius: 5px;
+  } .horizontal3 {
+    background-color: #536a7a;
+    margin: 17px 0;
+    text-align: right;
+    position: relative;
+    height: 30px;
+    border-radius: 5px;
+  } 
+
+
+
+  .graphique {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .vertical-bar {
+    background-color: #3438db;
+    width: 30px;
+    margin: 10px; 
+    display: inline-block;
+  }
+  
+  .vertical-bar1 {
+    background-color: #b5d6c7;
+    width: 30px;
+    margin: 10px; 
+    display: inline-block;
+  }
+  .vertical-bar2 {
+    background-color: #34383b;
+    width: 30px;
+    margin: 10px; 
+    display: inline-block;
+  }
+  .vertical-bar3 {
+    background-color: #38db;
+    width: 30px;
+    margin: 10px; 
+    display: inline-block;
+  }
+  .vertical {
+    display: flex;
+    align-items: flex-end; 
+    height: 200px;
+    padding: 10px;
+  }
+  
+  
+  
+  
+
+  
+  
+  
+
 
 #cambembert {
     position: relative;
