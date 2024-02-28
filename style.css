@@ -1,5 +1,4 @@
 
-
 .graphique {
     width: 100%;
     max-width: 600px;
@@ -85,4 +84,53 @@
   
   
   
-  
+
+
+#cambembert {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+div.cambembert {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 60px solid green;
+    border-radius: 60px;
+}
+
+.cambembert.vert {
+    z-index: 1;
+}
+
+.cambembert.rouge {
+    z-index: 2;
+    border: 60px solid red;
+    border-top: 60px solid transparent;
+    border-right: 60px solid transparent;
+}
+
+.cambembert.bleu {
+    z-index: 2;
+    border: 60px solid blue;
+    border-top: 60px solid transparent;
+    border-right: 60px solid transparent;
+    transform: rotate(36deg);
+}
+
+.texte {
+    position: absolute;
+    z-index: 3;
+    color: white;
+}
+
+.texte.vert {
+    top: 30px;
+    left: 70px;
+}
+
+.texte.rouge {
+    top: 60px;
+    left: 20px;
+}
